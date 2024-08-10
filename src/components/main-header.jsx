@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logo from "@/app/icon.png";
+import NavLink from "./nav-link";
 
 export default function MainHeader() {
   return (
@@ -24,11 +25,11 @@ export default function MainHeader() {
         </div>
         <nav>
           <ul className="no-underline flex flex-row">
-            <li className="mx-8 text-2xl bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-orange-600 hover:text-orange-700 hover:text-3xl hover:transition-all">
-              <Link href="/meals">Browse Meals</Link>
+            <li className="mx-8">
+              <NavLink href="/meals">Browse Meals</NavLink>
             </li>
-            <li className="mx-8 text-2xl bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-orange-600 hover:text-orange-700 hover:text-3xl hover:transition-all">
-              <Link href="/community">Community</Link>
+            <li className="mx-8">
+              <NavLink href="/community">Community</NavLink>
             </li>
           </ul>
         </nav>
