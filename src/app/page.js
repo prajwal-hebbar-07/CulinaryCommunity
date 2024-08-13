@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import ImageSlideshow from "@/components/image-slideshow";
+
 export const metadata = {
   title: "CulinaryCommunity - Home",
   description:
@@ -10,7 +12,9 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-row justify-around items-center">
-        <div className="w-[48rem] h-[36rem]">Image</div>
+        <div className="w-[48rem] h-[36rem]">
+          <ImageSlideshow />
+        </div>
         <div className="text-start ms-16">
           <h2 className="text-5xl text-amber-500 font-extrabold">
             Culinary Community
