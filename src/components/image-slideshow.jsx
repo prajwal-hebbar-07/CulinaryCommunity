@@ -41,7 +41,7 @@ export default function ImageSlideshow() {
           key={index}
           src={image.image}
           alt={image.alt}
-          className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-in-out transform ${
+          className={`absolute w-full h-full object-cover duration-500 ease-in-out transform ${
             index === currentIndex
               ? "opacity-100 scale-100 translate-x-0 rotate-0 z-10"
               : "opacity-0 scale-110 -translate-x-4 -rotate-6"
