@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import ImageSlideshow from "@/components/image-slideshow";
+import ImageSlideshow from "@/components/images/image-slideshow";
 
 export const metadata = {
   title: "CulinaryCommunity - Home",

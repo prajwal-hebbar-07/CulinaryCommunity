@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import logo from "@/app/icon.png";
-import NavLink from "./nav-link";
+import NavLink from "@/components/main-header/nav-link";
 
 export default function MainHeader() {
   return (
