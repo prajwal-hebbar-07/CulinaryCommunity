@@ -1,3 +1,11 @@
+import MealsHero from "@/components/meals-hero";
+
 export default function MealsPage() {
-  return <h1 className="text-3xl font-bold">Meals Page</h1>;
+  return (
+    <div className="md:container mt-8">
+      <section>
+        <MealsHero />
+      </section>
+    </div>
+  );
 }
