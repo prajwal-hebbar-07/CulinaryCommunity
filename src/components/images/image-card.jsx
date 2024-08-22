@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,11 +6,20 @@ export default function ImageCard({ title, slug, image, summary, creator }) {
   return (
     <article className="relative w-full h-full bg-stone-700/50 rounded-lg">
       <div className="relative h-[60%] w-full">
+        <Head>
+          <link
+            rel="preload"
+            href="/_next/image?url=%2Fimages%2Fschnitzel.jpg&w=2048&q=75"
+            as="image"
+          />
+        </Head>
         <Image
           src={image}
           alt={title}
+          sizes="(max-width: 600px) 100vw"
           className="relative w-full h-full object-cover rounded-t-lg"
           fill
+          priority={image === "/images/schnitzel.jpg"}
         />
       </div>
       <div className="mx-4">
